@@ -628,7 +628,6 @@ LIBOBJS
 CPPUNIT_CONFIG
 DLLTOOL
 GCC
-MACSETFILE
 POSTLINK_COMMAND
 LIBWXMACRES
 WX_RESOURCES_MACOSX_DATA
@@ -861,7 +860,6 @@ ICC_PCH_CREATE_SWITCH
 ICC_PCH
 GCC_PCH
 OBJCXXFLAGS
-SETFILE
 REZ
 WINDRES
 BK_DEPS
@@ -41795,7 +41793,6 @@ fi
 
 
 
-    MACSETFILE="\$(SETFILE)"
 
             if test "$wxUSE_OSX_CARBON" = 1; then
         POSTLINK_COMMAND="\$(REZ) -d __DARWIN__ -t APPL Carbon.r -o"
@@ -41808,7 +41805,6 @@ fi
     fi
 
 else
-        MACSETFILE="@true"
 
     if test "$wxUSE_PM" = 1; then
         RESCOMP="emxbind"

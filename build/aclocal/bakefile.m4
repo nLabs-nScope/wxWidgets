@@ -662,13 +662,11 @@ AC_DEFUN([AC_BAKEFILE_RES_COMPILERS],
 
       *-*-darwin* | powerpc-apple-macos* )
             AC_CHECK_PROG(REZ, Rez, Rez, /Developer/Tools/Rez)
-            AC_CHECK_PROG(SETFILE, SetFile, SetFile, /Developer/Tools/SetFile)
         ;;
     esac
 
     AC_SUBST(WINDRES)
     AC_SUBST(REZ)
-    AC_SUBST(SETFILE)
 ])
 
 dnl ---------------------------------------------------------------------------

@@ -8214,7 +8214,6 @@ if test "$wxUSE_MAC" = 1 -o "$wxUSE_OLD_COCOA" = 1; then
 
     AC_CHECK_PROG(DEREZ, DeRez, DeRez, /Developer/Tools/DeRez)
 
-    MACSETFILE="\$(SETFILE)"
 
     dnl resources are bundled both with shared library and applications
     dnl since the carb resource *must* be included in the application
@@ -8230,7 +8229,6 @@ if test "$wxUSE_MAC" = 1 -o "$wxUSE_OLD_COCOA" = 1; then
 
 else
     dnl default value is to (silently) do nothing in the makefile
-    MACSETFILE="@true"
 
     if test "$wxUSE_PM" = 1; then
         RESCOMP="emxbind"
@@ -8427,7 +8425,6 @@ dnl additional for Mac OS X
 AC_SUBST(DEREZ)
 AC_SUBST(LIBWXMACRES)
 AC_SUBST(POSTLINK_COMMAND)
-AC_SUBST(MACSETFILE)
 
 dnl other tools
 AC_SUBST(GCC)
