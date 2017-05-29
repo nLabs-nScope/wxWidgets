@@ -7158,7 +7158,7 @@ if test "$wxUSE_XRC" = "yes"; then
         USE_XRC=1
         SAMPLES_SUBDIRS="$SAMPLES_SUBDIRS xrc"
 
-        echo "${HOST_PREFIX}install_name_tool \${changes} \${2}/wxrc-${WX_RELEASE}" >> change-install-names
+        echo "${HOST_PREFIX}install_name_tool \${changes} \${2}/wxrc" >> change-install-names
     fi
 fi
 
